@@ -1,3 +1,4 @@
+/* IYI app shell: one mobile-first experience with stays, rides, bookings, wallet, and accessible feedback. */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Route, Switch } from "wouter";
@@ -6,7 +7,6 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 
-/** Monsoon Transit shell: warm hospitality surfaces, route-rail wayfinding, and action-first navigation. */
 function Router() {
   return (
     <Switch>
@@ -22,7 +22,7 @@ export default function App() {
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
-          <Toaster position="top-right" />
+          <Toaster position="top-center" />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
