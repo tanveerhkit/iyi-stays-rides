@@ -24,7 +24,7 @@ const heroImage = "/manus-storage/oyo-rides-hero_854ffde8.png";
 const airportImage = "/manus-storage/oyo-rides-airport_3b99d9e8.png";
 const cityImage = "/manus-storage/oyo-rides-city_0e4fa707.png";
 const stationImage = "/manus-storage/oyo-rides-station_0e8f4e42.png";
-const markImage = "/manus-storage/oyo-rides-mark_95e2fc40.png";
+const markImage = "/manus-storage/iyi-rides-mark_bc9983c7.png";
 
 const rideTypes = [
   { id: "airport", label: "Airport pickup", icon: Plane, detail: "Meet-and-greet at the terminal" },
@@ -45,7 +45,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [rideType, setRideType] = useState("airport");
   const [pickup, setPickup] = useState("Kempegowda International Airport");
-  const [drop, setDrop] = useState("OYO Townhouse, Indiranagar");
+  const [drop, setDrop] = useState("IYI Stay, Indiranagar");
   const [date, setDate] = useState("Tue, 02 Sep");
   const [time, setTime] = useState("08:30 AM");
   const [selectedOption, setSelectedOption] = useState(0);
@@ -71,9 +71,9 @@ export default function Home() {
     <div className="site-shell">
       <header className="topbar">
         <div className="topbar-inner">
-          <button className="brand-lockup" onClick={() => scrollToId("top")} aria-label="OYO Rides home">
+          <button className="brand-lockup" onClick={() => scrollToId("top")} aria-label="IYI Rides home">
             <img src={markImage} alt="" className="brand-mark" />
-            <span><b>OYO</b> <em>RIDES</em></span>
+            <span><b>IYI</b> <em>RIDES</em></span>
           </button>
           <nav className={`main-nav ${menuOpen ? "is-open" : ""}`} aria-label="Primary navigation">
             <button onClick={() => { scrollToId("how-it-works"); setMenuOpen(false); }}>How it works</button>
@@ -93,7 +93,7 @@ export default function Home() {
         <section className="hero-section">
           <div className="hero-art" style={{ backgroundImage: `url(${heroImage})` }} aria-label="Cab arriving at a hotel in the rain" role="img">
             <div className="hero-art-wash" />
-            <div className="route-stamp"><span className="stamp-dot" /> ARRIVE WELL <span className="stamp-line" /> OYO 01</div>
+            <div className="route-stamp"><span className="stamp-dot" /> ARRIVE WELL <span className="stamp-line" /> IYI 01</div>
           </div>
           <div className="hero-content page-width">
             <div className="hero-copy">
@@ -126,7 +126,7 @@ export default function Home() {
         <section className="journey-intro page-width" id="how-it-works">
           <div className="route-rail"><span className="rail-line" /><span className="rail-node active">01</span><span className="rail-node">02</span><span className="rail-node">03</span></div>
           <div className="intro-copy"><span className="section-kicker">YOUR STAY, CONNECTED</span><h2>From front door<br />to <i>front desk.</i></h2><p>Good travel has a rhythm. We keep the handoffs simple, so the journey from a platform, terminal, or street corner feels like part of the stay—not a separate thing to solve.</p></div>
-          <div className="intro-aside"><div className="aside-rule" /><p>One place to book, follow, and get help with the ride around your OYO stay.</p><button className="text-link" onClick={() => scrollToId("safety")}>Why guests choose it <ArrowRight size={16} /></button></div>
+          <div className="intro-aside"><div className="aside-rule" /><p>One place to book, follow, and get help with the ride around your IYI stay.</p><button className="text-link" onClick={() => scrollToId("safety")}>Why guests choose it <ArrowRight size={16} /></button></div>
         </section>
 
         <section className="story-band page-width">
@@ -148,13 +148,13 @@ export default function Home() {
         </section>
 
         <section className="safety-section" id="safety">
-          <div className="page-width safety-inner"><div className="safety-copy"><span className="section-kicker light">THE OYO STANDARD</span><h2>Useful details.<br /><i>Quiet confidence.</i></h2><p>We keep the important things close: transparent pricing, clear pickup guidance, and support when plans change.</p><button className="light-button" onClick={() => toast.info("Ride support is available in the full OYO Rides app.")}>Explore safety & support <ArrowRight size={16} /></button></div><div className="safety-list"><div className="safety-item"><span className="safety-number">01</span><div><h3>Know before you go</h3><p>Fare, vehicle capacity, and cancellation terms are shown before confirmation.</p></div></div><div className="safety-item"><span className="safety-number">02</span><div><h3>Follow the handoff</h3><p>Pickup notes, driver details, and ride status stay in one trip view.</p></div></div><div className="safety-item"><span className="safety-number">03</span><div><h3>Help is part of the ride</h3><p>Get ride-specific support for delays, no-shows, changes, and safety concerns.</p></div></div></div></div>
+          <div className="page-width safety-inner"><div className="safety-copy"><span className="section-kicker light">THE IYI STANDARD</span><h2>Useful details.<br /><i>Quiet confidence.</i></h2><p>We keep the important things close: transparent pricing, clear pickup guidance, and support when plans change.</p><button className="light-button" onClick={() => toast.info("Ride support is available in the full IYI Rides app.")}>Explore safety & support <ArrowRight size={16} /></button></div><div className="safety-list"><div className="safety-item"><span className="safety-number">01</span><div><h3>Know before you go</h3><p>Fare, vehicle capacity, and cancellation terms are shown before confirmation.</p></div></div><div className="safety-item"><span className="safety-number">02</span><div><h3>Follow the handoff</h3><p>Pickup notes, driver details, and ride status stay in one trip view.</p></div></div><div className="safety-item"><span className="safety-number">03</span><div><h3>Help is part of the ride</h3><p>Get ride-specific support for delays, no-shows, changes, and safety concerns.</p></div></div></div></div>
         </section>
 
         <section className="final-cta page-width"><div className="cta-route"><span className="route-dot" /><span className="route-dash" /><span className="route-dot end" /></div><div><span className="section-kicker">READY WHEN YOU ARE</span><h2>Your stay starts<br /><i>before check-in.</i></h2></div><button className="primary-button" onClick={() => scrollToId("book")}>Plan my pickup <ArrowRight size={17} /></button></section>
       </main>
 
-      <footer className="footer"><div className="page-width footer-inner"><div className="brand-lockup footer-brand"><img src={markImage} alt="" className="brand-mark" /><span><b>OYO</b> <em>RIDES</em></span><p>One less thing to figure out<br />around your stay.</p></div><div className="footer-links"><div><span>EXPLORE</span><button onClick={() => scrollToId("how-it-works")}>How it works</button><button onClick={() => scrollToId("ride-options")}>Ride types</button></div><div><span>NEED A HAND?</span><button onClick={() => toast.info("Help centre is coming soon.")}>Help centre</button><button onClick={() => toast.info("Terms are coming soon.")}>Terms & privacy</button></div></div><div className="footer-meta"><span><Headphones size={16} /> Support, when it matters</span><small>© 2026 OYO Rides concept</small></div></div></footer>
+      <footer className="footer"><div className="page-width footer-inner"><div className="brand-lockup footer-brand"><img src={markImage} alt="" className="brand-mark" /><span><b>IYI</b> <em>RIDES</em></span><p>One less thing to figure out<br />around your stay.</p></div><div className="footer-links"><div><span>EXPLORE</span><button onClick={() => scrollToId("how-it-works")}>How it works</button><button onClick={() => scrollToId("ride-options")}>Ride types</button></div><div><span>NEED A HAND?</span><button onClick={() => toast.info("Help centre is coming soon.")}>Help centre</button><button onClick={() => toast.info("Terms are coming soon.")}>Terms & privacy</button></div></div><div className="footer-meta"><span><Headphones size={16} /> Support, when it matters</span><small>© 2026 IYI Rides concept</small></div></div></footer>
     </div>
   );
 }
