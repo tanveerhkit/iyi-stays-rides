@@ -23,3 +23,10 @@
 ## Direct ride editor
 
 - [x] Open a ride editor modal from the booking summary Edit action and save updated ride details back into checkout.
+
+## Hardcoded admin console
+
+- [x] Add an admin route with a simple sidebar, header, quick stats, and alerts.
+- [x] Add stays, rides, bookings, offers, wallet, users, safety, and settings controls.
+- [x] Add simple toggles, status actions, filters, edit dialogs, and save feedback using hardcoded demo state.
+- [x] Validate the admin page on desktop and mobile, then save a new checkpoint.
