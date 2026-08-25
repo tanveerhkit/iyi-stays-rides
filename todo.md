@@ -15,3 +15,7 @@
 - [x] Show combined room plus ride pricing, add-on removal, and payment summary.
 - [x] Confirm the stay and ride together with a combined trip summary.
 - [ ] Validate the integrated flow and save a new checkpoint.
+
+## Booking-sheet overlap fix
+
+- [x] Separate the scrollable booking content from the fixed confirmation bar and validate the combined total layout.
