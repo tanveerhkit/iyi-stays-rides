@@ -7,3 +7,11 @@
 - [x] Add interactive bottom navigation, menus, favorites, wallet, and support placeholders with clear feedback.
 - [x] Validate mobile and desktop responsive layouts, interactions, and production build.
 - [ ] Save checkpoint and deliver the upgraded app.
+
+## Combined stay + ride flow
+
+- [x] Add a ride add-on module inside hotel detail and room booking sheets.
+- [x] Sync ride pickup/drop-off with the selected hotel and booking date/time.
+- [x] Show combined room plus ride pricing, add-on removal, and payment summary.
+- [x] Confirm the stay and ride together with a combined trip summary.
+- [ ] Validate the integrated flow and save a new checkpoint.
