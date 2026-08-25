@@ -19,3 +19,7 @@
 ## Booking-sheet overlap fix
 
 - [x] Separate the scrollable booking content from the fixed confirmation bar and validate the combined total layout.
+
+## Direct ride editor
+
+- [x] Open a ride editor modal from the booking summary Edit action and save updated ride details back into checkout.
