@@ -30,3 +30,10 @@
 - [x] Add stays, rides, bookings, offers, wallet, users, safety, and settings controls.
 - [x] Add simple toggles, status actions, filters, edit dialogs, and save feedback using hardcoded demo state.
 - [x] Validate the admin page on desktop and mobile, then save a new checkpoint.
+
+## GitHub delivery
+
+- [ ] Add a concise README with local development and build instructions.
+- [ ] Add GitHub deployment guidance without committing secrets.
+- [ ] Create a private GitHub repository and push the current website.
+- [ ] Save a release checkpoint and report the repository and deployment next step.
