@@ -33,7 +33,7 @@
 
 ## GitHub delivery
 
-- [ ] Add a concise README with local development and build instructions.
-- [ ] Add GitHub deployment guidance without committing secrets.
-- [ ] Create a private GitHub repository and push the current website.
-- [ ] Save a release checkpoint and report the repository and deployment next step.
+- [x] Add a concise README with local development and build instructions.
+- [x] Add GitHub deployment guidance without committing secrets.
+- [x] Create a private GitHub repository and push the current website.
+- [x] Save a release checkpoint and report the repository and deployment next step.
