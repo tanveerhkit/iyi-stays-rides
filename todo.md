@@ -45,3 +45,7 @@
 ## GitHub Actions deployment fix
 
 - [ ] Remove the duplicate pnpm version declaration, validate the workflow build, push the fix, and rerun GitHub Pages deployment.
+
+## GitHub Pages 404 fix
+
+- [ ] Make the project-path build and client-side fallback load correctly at `/iyi-stays-rides/`, then validate and push the fix.
