@@ -37,3 +37,11 @@
 - [x] Add GitHub deployment guidance without committing secrets.
 - [x] Create a private GitHub repository and push the current website.
 - [x] Save a release checkpoint and report the repository and deployment next step.
+
+## GitHub Pages activation
+
+- [ ] Enable GitHub Pages in repository settings with GitHub Actions as the source, then verify the workflow URL.
+
+## GitHub Actions deployment fix
+
+- [ ] Remove the duplicate pnpm version declaration, validate the workflow build, push the fix, and rerun GitHub Pages deployment.
