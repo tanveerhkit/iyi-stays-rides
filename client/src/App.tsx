@@ -8,6 +8,14 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Admin from "./pages/Admin";
 
+function ProjectPathFallback() {
+  const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
+
+  if (pathname === "/iyi-stays-rides") return <Home />;
+  if (pathname === "/iyi-stays-rides/admin") return <Admin />;
+  return <NotFound />;
+}
+
 function Router() {
   const base = window.location.pathname.startsWith("/iyi-stays-rides") ? "/iyi-stays-rides" : "";
 
@@ -17,7 +25,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/admin" component={Admin} />
         <Route path="/404" component={NotFound} />
-        <Route component={NotFound} />
+        <Route component={ProjectPathFallback} />
       </Switch>
     </WouterRouter>
   );
